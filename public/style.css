@@ -30,9 +30,10 @@ h1 {
 }
 .row {
     display: flex;
+    justify-content: center;
 }
 .btn {
-    border: none;
+    border:none;
     width:75px;
     height: 75px;
     display: flex;
@@ -62,6 +63,8 @@ h1 {
     cursor: no-drop;
   }
 .result-container{
+  display: flex;
+  justify-content: center;
    max-width: 200px;
    background-color:white;
    opacity:0.7;
