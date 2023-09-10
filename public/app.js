@@ -42,13 +42,14 @@ const ticTacToe = (index) => {
 const resetGame = () => {
     cells = ['', '', '', '', '', '', '', '', ''];
     currentPlayer = 'X';
-    result.textContent = 'Player X won';
+    result.textContent = 'Player X Turn'; // Set it to the initial message
 
     cellsButtons.forEach((button) => {
         button.value = '';
         button.disabled = false;
     });
 };
+
 
 cellsButtons.forEach((button, index) => {
     button.addEventListener('click', () => ticTacToe(index));
