@@ -55,4 +55,3 @@ cellsButtons.forEach((button, index) => {
 });
 
 resetButton.addEventListener('click', resetGame);
-
