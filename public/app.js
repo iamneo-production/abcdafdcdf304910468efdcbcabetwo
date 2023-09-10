@@ -59,8 +59,8 @@ const resetGame = () => {
     });
 };
 
-cellsButtons.forEach((button, index) => {
-    button.addEventListener('click', () => ticTacToe(index));
+btns.forEach((btn, i) => {
+    btn.addEventListener('click', () => ticTacToe(btn, i));
 });
 
-resetButton.addEventListener('click', resetGame);
+document.querySelector('#reset').addEventListener('click', resetGame);
